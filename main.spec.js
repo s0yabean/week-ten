@@ -9,7 +9,9 @@ describe("Vue component tests", () => {
     const defaultData = App.data();
     expect(defaultData.title).toBe("BT3103 Week 10");
   });
-
+  it("The component should have a change function.", () => {
+    expect(typeof App.methods.function_1234).toBe("function");
+  });
   it("The component should have an updateCurrentChart function.", () => {
     expect(typeof App.methods.updateCurrentChart).toBe("function");
   });
